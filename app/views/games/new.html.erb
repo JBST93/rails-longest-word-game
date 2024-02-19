@@ -1,0 +1,23 @@
+<h1>Find the longest word!</h1>
+
+Letters for the game: <%= @game %>
+
+<form action="/" type="/POST" data-turbo="false">
+  <input type="text" name ="trial">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="submit">
+<form>
+
+
+<h2>The word you tried:</h2>
+<p><%= @word %></p>
+
+
+<p><%= @word_array %></p>
+
+
+<%= @check %>
+<br>
+<%= @message %>
+
+<p> Your score is: <%= @score %></p>
